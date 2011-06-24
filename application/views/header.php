@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome to CodeIgniter</title>
-
+    <?php if (isset($CSS_Files)) echo $CSS_Files; ?>
+    <?php if (isset($JS_Files)) echo $JS_Files; ?>
     <style type="text/css">
 
       body {

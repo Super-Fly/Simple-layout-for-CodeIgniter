@@ -17,12 +17,12 @@ $config['media_url'] = '';
 * CSS and JavaScript
 * -------------------------------------------------------------------
 *
-* Paths to css and js files
+* Folders of css and js files with trailing slash!
 *
 */
 
-$config['cssFilePath'] = './files/css/';
-$config['jsFilePath']  = './files/js/';
+$config['css_folder'] = 'css/';
+$config['js_folder']  = 'js/';
 
 /* End of file layout.php */
 /* Location: ./application/config/layout.php */

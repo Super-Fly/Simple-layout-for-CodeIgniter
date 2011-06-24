@@ -2,18 +2,23 @@
 
 class Welcome extends CI_Controller {
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct();
     
-    $this->layout->setLayout('layoutName');
+    //$this->layout->setLayout('layoutName');
 	}
 
-	function index() {
+	public function index() {
 		
     $data['title'] = 'some title';
     $data['variableName'] = 'variableValue';
      
     $this->layout->setData($data);
+    
+    // add css file or files
+    $this->layout->css('cssFilename');
+    // add js file or files
+    $this->layout->js('jsFilename');
 
     //if you whant different view
     //$this->layout->setView('viewName');
